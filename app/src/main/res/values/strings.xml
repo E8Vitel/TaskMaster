@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TaskMaster</string>
+    <string name="contrasena">¿Has olvidado tu contraseña?</string>
+    <string name="email">Ingresa tu email</string>
+    <string name="contrasena2">Ingresa tu contraseña</string>
+    <string name="inicio">Iniciar sesion</string>
+</resources>
