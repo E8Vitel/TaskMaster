@@ -38,7 +38,8 @@ public class ConfigActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(ConfigActivity.this, TareaActivity.class);
+                Intent intent = new Intent(ConfigActivity.this,TareaActivity.class);
+                startActivity(intent);
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +51,8 @@ public class ConfigActivity extends AppCompatActivity {
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(ConfigActivity.this, AboutActivity.class);
+                Intent intent = new Intent(ConfigActivity.this,AboutActivity.class);
+                startActivity(intent);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {
@@ -68,12 +70,7 @@ public class ConfigActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
-    public static void redirectActivity(Activity activity, Class secondActivity){
-        Intent intent = new Intent(activity, secondActivity);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        activity.startActivity(intent);
-        activity.finish();
-    }
+
     @Override
     protected void onPause() {
         super.onPause();
