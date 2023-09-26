@@ -5,7 +5,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class TareaActivity extends AppCompatActivity {
+public class ConfigActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView menu;
@@ -21,7 +20,7 @@ public class TareaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tarea);
+        setContentView(R.layout.activity_config);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
@@ -31,33 +30,33 @@ public class TareaActivity extends AppCompatActivity {
         settings = findViewById(R.id.settings);
 
         menu.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               openDrawer(drawerLayout);
-           }
+            @Override
+            public void onClick(View view) {
+                openDrawer(drawerLayout);
+            }
         });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                recreate();
+                redirectActivity(ConfigActivity.this, TareaActivity.class);
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(TareaActivity.this, ConfigActivity.class);
+                recreate();
             }
         });
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(TareaActivity.this, AboutActivity.class);
+                redirectActivity(ConfigActivity.this, AboutActivity.class);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(TareaActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ConfigActivity.this, "Logout", Toast.LENGTH_SHORT).show();
             }
         });
     }
