@@ -45,7 +45,7 @@ public class TareaActivity extends AppCompatActivity {
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(TareaActivity.this, ConfigActivity.class);
+                redirectActivity(TareaActivity.this, AboutActivity.class);
             }
         });
         about.setOnClickListener(new View.OnClickListener() {

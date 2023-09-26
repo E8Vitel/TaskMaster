@@ -4,4 +4,15 @@
     <string name="email">Ingresa tu email</string>
     <string name="contrasena2">Ingresa tu contraseña</string>
     <string name="inicio">Iniciar sesion</string>
+    <string name="tema">Tema</string>
+    <string name="predeterminado">Predeterminado</string>
+    <string name="oscuro">Oscuro</string>
+    <string name="aqua">Aqua</string>
+    <string name="naturaleza">Naturaleza</string>
+    <string name="tamano">Tamaño</string>
+    <string name="chiquita">aA</string>
+    <string name="letraGrande">aA</string>
+    <string name="formato_de_fecha">Formato de fecha</string>
+    <string name="twelve">12h</string>
+    <string name="twentyFour">24h</string>
 </resources>
