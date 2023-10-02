@@ -21,6 +21,7 @@ public class SesionActivity extends AppCompatActivity {
                     public void onClick(View view) {
                 Intent intent = new Intent(SesionActivity.this,TareaActivity.class);
                 startActivity(intent);
+
             }
         });
     }
