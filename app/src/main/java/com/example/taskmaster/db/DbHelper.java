@@ -39,5 +39,3 @@ public class DbHelper extends SQLiteOpenHelper {
 
     }
 }
-    //DbHelper dbHelper = new DbHelper(SesionActivity.this);
-    //SQLiteDatabase db = dbHelper.getWritableDatabase();
