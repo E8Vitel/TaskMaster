@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.taskmaster.SesionActivity;
+
 public class DbHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
@@ -37,3 +39,5 @@ public class DbHelper extends SQLiteOpenHelper {
 
     }
 }
+    //DbHelper dbHelper = new DbHelper(SesionActivity.this);
+    //SQLiteDatabase db = dbHelper.getWritableDatabase();
