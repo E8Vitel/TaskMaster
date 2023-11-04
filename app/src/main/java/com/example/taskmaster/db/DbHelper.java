@@ -6,8 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import com.example.taskmaster.SesionActivity;
-
 public class DbHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
@@ -30,12 +28,14 @@ public class DbHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE " + TABLE_SESION + "(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "usuario TEXT NOT NULL, " +
                 "email TEXT NOT NULL," +
-                "contraseña TEXT NOT NULL)");
+                "contrasena TEXT NOT NULL)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE " + TABLE_SESION);
+        onCreate(db);
     }
 }

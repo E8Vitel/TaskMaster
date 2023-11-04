@@ -3,7 +3,7 @@
     <string name="contrasena">¿Has olvidado tu contraseña?</string>
     <string name="email">Ingresa tu email</string>
     <string name="contrasena2">Ingresa tu contraseña</string>
-    <string name="inicio">Iniciar sesion</string>
+    <string name="inicio">Iniciar sesión</string>
     <string name="tema">Tema</string>
     <string name="predeterminado">Predeterminado</string>
     <string name="oscuro">Oscuro</string>
@@ -15,4 +15,8 @@
     <string name="formato_de_fecha">Formato de fecha</string>
     <string name="twelve">12h</string>
     <string name="twentyFour">24h</string>
+    <string name="registrobtn">Registrarse</string>
+    <string name="usuariotext">Ingresa nombre de usuario </string>
+    <string name="cuenta">¿No tienes cuenta?</string>
+    <string name="yacuenta">¿Ya tienes cuenta?</string>
 </resources>
