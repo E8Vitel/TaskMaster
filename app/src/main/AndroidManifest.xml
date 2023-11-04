@@ -9,8 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TaskMaster"
-        >
+        android:theme="@style/Theme.TaskMaster">
         <activity
             android:name=".AboutActivity"
             android:exported="false" />

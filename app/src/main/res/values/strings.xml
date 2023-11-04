@@ -19,4 +19,9 @@
     <string name="usuariotext">Ingresa nombre de usuario </string>
     <string name="cuenta">¿No tienes cuenta?</string>
     <string name="yacuenta">¿Ya tienes cuenta?</string>
+    <string name="agregar">+</string>
+    <string name="descripcion_de_la_tarea">Descripcion de la tarea</string>
+    <string name="seleccionar_fecha_limite">Seleccionar fecha limite</string>
+    <string name="seleccionar_fecha">Seleccionar fecha</string>
+    <string name="nombre_de_la_tarea">Nombre de la tarea</string>
 </resources>
