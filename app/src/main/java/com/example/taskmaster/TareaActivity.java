@@ -123,9 +123,9 @@ public class TareaActivity extends AppCompatActivity {
         View view = getLayoutInflater().inflate(R.layout.custom_dialog_layout, null);
         builder.setView(view);
 
-        taskName = findViewById(R.id.taskName);
-        descripcion = findViewById(R.id.descripcion);
-        txtFechaLimite = findViewById(R.id.txtFechaLimite);
+        taskName = view.findViewById(R.id.taskName);
+        descripcion = view.findViewById(R.id.descripcion);
+        txtFechaLimite = view.findViewById(R.id.txtFechaLimite);
 
         // Configura el AlertDialog
         builder.setTitle("Agregar Tarea")

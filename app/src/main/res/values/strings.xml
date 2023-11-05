@@ -24,4 +24,8 @@
     <string name="seleccionar_fecha_limite">Seleccionar fecha limite</string>
     <string name="seleccionar_fecha">Seleccionar fecha</string>
     <string name="nombre_de_la_tarea">Nombre de la tarea</string>
+    <string name="iniciod">Inicio</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="salir">Salir</string>
 </resources>

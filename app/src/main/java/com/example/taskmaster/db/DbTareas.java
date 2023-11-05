@@ -46,7 +46,7 @@ public class DbTareas extends DbHelper {
         Tareas tarea = null;
         Cursor cursorTareas = null;
 
-        cursorTareas = db.rawQuery("SELECT nombre,fecha FROM " + TABLE_NOTAS, null);
+        cursorTareas = db.rawQuery("SELECT * FROM " + TABLE_NOTAS, null);
 
         if (cursorTareas.moveToFirst()) {
             do{
